@@ -1,7 +1,6 @@
 Project creation date: 2/11/2019
 
-### Project Title
-Replace the Project Title
+Project title: US Bikeshare Data Analysis
 
 ### Description
 Describe what your project is about and what it does
