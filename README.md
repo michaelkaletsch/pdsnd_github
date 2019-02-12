@@ -1,8 +1,10 @@
-Project creation date: 2/11/2019
+Project creation date:   
+2/11/2019
 
-Project title: US Bikeshare Data Analysis
+Project title:   
+US Bikeshare Data Analysis
 
-Project description:
+Project description:   
 Data related to bike share systems was explored for three major cities in the United States (Chicago, New York City, and Washington). The data exploration was performed with Python code to import the data and answer several questions about the utilization of bikes in the before mentioned cities. Descriptive statistics was used for the computing of datapoints within the given timeframe of exploration. The outcome is a script that takes in raw user input to create an interactive user experience to present these statistics as well as raw data if desired.
 
 Files used in project:
