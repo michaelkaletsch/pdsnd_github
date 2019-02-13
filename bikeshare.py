@@ -167,8 +167,8 @@ def user_stats(df):
         most_recent_year = df['Birth Year'].max()
         print('The most recent year of birth is {}.'.format(int(most_recent_year)))
 
-        top_year = df['Birth Year'].mode()[0]
-        print('The most common year of birth is {}.'.format(int(top_year)))
+        favorite_year = df['Birth Year'].mode()[0]
+        print('The most common year of birth is {}.'.format(int(favorite_year)))
     else:
         print('This dataset has no birth year data available.')
         pass
