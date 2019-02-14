@@ -18,7 +18,7 @@ Data related to bike share systems was explored for three major cities in the Un
    
       
 **Credits:**
-- The following posts have been a source of inspiration:
+- *The following posts have been a source of inspiration:*
     - <https://stackoverflow.com/questions/51788857/having-trouble-with-while-loops-input-and-strings-in-python>
     - <https://stackoverflow.com/questions/33835926/mean-of-all-the-columns-of-a-panda-dataframe>
     - <https://stackoverflow.com/questions/15006298/how-to-preview-a-part-of-a-large-pandas-dataframe-in-ipython-notebook>
