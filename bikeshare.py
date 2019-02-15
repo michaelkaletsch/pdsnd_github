@@ -84,16 +84,16 @@ def time_stats(df):
     # TO DO: display the most common month
     month = df['month'].mode()[0]
     months = ['January', 'February', 'March', 'April', 'May', 'June']
-    top_month = months[month - 1]
-    print('The most common month:', top_month)
+    favorite_month = months[month - 1]
+    print('The most common month:', favorite_month)
 
     # TO DO: display the most common day of week
-    top_day = df['day_of_week'].mode()[0]
-    print('The most common day of week:', top_day)
+    favorite_day = df['day_of_week'].mode()[0]
+    print('The most common day of week:', favorite_day)
 
     # TO DO: display the most common start hour
-    top_hour = df['hour'].mode()[0]
-    print('The most common start hour:', top_hour)
+    favorite_hour = df['hour'].mode()[0]
+    print('The most common start hour:', favorite_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -106,16 +106,16 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    top_start_station = df['Start Station'].mode()[0]
-    print('The most commonly used start station is:', top_start_station)
+    favorite_start_station = df['Start Station'].mode()[0]
+    print('The most commonly used start station is:', favorite_start_station)
 
     # TO DO: display most commonly used end station
-    top_end_station = df['End Station'].mode()[0]
-    print('The most commonly used end station is:', top_end_station)
+    favorite_end_station = df['End Station'].mode()[0]
+    print('The most commonly used end station is:', favorite_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
-    top_start_end_station = df.groupby(['Start Station', 'End Station']).size().sort_values(ascending=False).head(1)
-    print('\nThe most frequent combination of start and end station with number of occurence is:\n',top_start_end_station)
+    favorite_start_end_station_combo = df.groupby(['Start Station', 'End Station']).size().sort_values(ascending=False).head(1)
+    print('\nThe most frequent combination of start and end station with number of occurence is:\n',favorite_start_end_station_combo)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -167,8 +167,8 @@ def user_stats(df):
         most_recent_year = df['Birth Year'].max()
         print('The most recent year of birth is {}.'.format(int(most_recent_year)))
 
-        top_year = df['Birth Year'].mode()[0]
-        print('The most common year of birth is {}.'.format(int(top_year)))
+        favorite_year = df['Birth Year'].mode()[0]
+        print('The most common year of birth is {}.'.format(int(favorite_year)))
     else:
         print('This dataset has no birth year data available.')
         pass
